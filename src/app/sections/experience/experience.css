@@ -1,0 +1,42 @@
+.section{
+    padding:70px 8%;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.timeline-item{
+    display:grid;
+    grid-template-columns:200px 1fr;
+    gap:30px;
+}
+
+.timeline-date{
+    font-weight:700;
+    color:#2563eb;
+}
+
+.timeline-content{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.timeline-content h4{
+    color:#64748b;
+    margin-bottom:15px;
+}
