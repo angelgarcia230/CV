@@ -1,31 +1,87 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-    font-family:'Segoe UI',sans-serif;
-    background:#f8fafc;
-    color:#0f172a;
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
 }
 
-.section{
-    padding:60px 8%;
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
+    line-height: 1.6;
 }
 
-.container{
-    max-width:1200px;
-    margin:auto;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-.section-title{
-    text-align:center;
-    font-size:2.5rem;
-    margin-bottom:40px;
-    color:#0f172a;
+.section {
+    padding: 60px 8%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #0f172a;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .section {
+        padding: 50px 6%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    .section {
+        padding: 40px 5%;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+}
+
+/* Celulares pequeños */
+@media (max-width: 360px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    body {
+        font-size: 14px;
+    }
 }

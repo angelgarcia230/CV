@@ -1,38 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :host {
-  display: block;
+    display: block;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body {
-  font-family: 'Inter', Arial, sans-serif;
-  background: #f5f7fa;
-  color: #1f2937;
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f5f7fa;
+    color: #1f2937;
+    line-height: 1.6;
 }
 
 main {
-  width: 100%;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 footer {
-  padding: 30px;
-  text-align: center;
-  background: #172033;
-  color: #cbd5e1;
-  font-size: 13px;
+    padding: 30px;
+    text-align: center;
+    background: #172033;
+    color: #cbd5e1;
+    font-size: 13px;
 }
 
 ::selection {
-  background: #1e4f8a;
-  color: white;
+    background: #1e4f8a;
+    color: white;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    footer {
+        padding: 20px;
+        font-size: 12px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 11px;
+    }
 }

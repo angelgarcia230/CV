@@ -1,21 +1,44 @@
-.section{
-    padding:70px 8%;
+.section {
+    padding: 70px 8%;
 }
 
-.education-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:25px;
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
 }
 
-.education-card{
+.education-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
 
-    background:white;
+/* Tablets */
+@media (max-width: 768px) {
+    .section {
+        padding: 60px 6%;
+    }
 
-    padding:30px;
+    .education-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 
-    border-radius:15px;
+    .education-card {
+        padding: 25px;
+    }
+}
 
-    box-shadow:
-    0 5px 15px rgba(0,0,0,.08);
+/* Celulares */
+@media (max-width: 480px) {
+    .section {
+        padding: 50px 5%;
+    }
+
+    .education-card {
+        padding: 20px;
+        border-radius: 12px;
+    }
 }
